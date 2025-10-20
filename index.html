@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HopeLink - 讓故事成為重聚的橋樑。協助失散兒童與家人團圓的人道救援平台。">
+    <title>HopeLink - 讓故事成為重聚的橋樑</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Noto+Sans:wght@300;400;500;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 頂部導覽列 -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-icon">🔗</span>
+                    <span class="logo-text">HopeLink</span>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#about" data-i18n="nav.about">關於 HopeLink</a></li>
+                    <li><a href="#how-to-help" data-i18n="nav.how-to-help">如何協助</a></li>
+                    <li><a href="#" data-modal="childModal" data-i18n="nav.child">孩童端</a></li>
+                    <li><a href="#" data-modal="parentModal" data-i18n="nav.parent">家長端</a></li>
+                    <li><a href="#" data-modal="reporterModal" data-i18n="nav.reporter">通報者</a></li>
+                    <li class="language-selector">
+                        <div class="lang-buttons">
+                            <button class="lang-option active" data-lang="zh">中文</button>
+                            <button class="lang-option" data-lang="en">EN</button>
+                            <button class="lang-option" data-lang="uk">УКР</button>
+                            <button class="lang-option" data-lang="ar">عربي</button>
+                        </div>
+                    </li>
+                </ul>
+                
+                <button class="auth-btn" data-i18n="nav.auth">登入／註冊</button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 主視覺區 -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="floating-links">
+                <div class="link-line"></div>
+                <div class="link-line"></div>
+                <div class="link-line"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero.title">讓故事成為重聚的橋樑</h1>
+                <p class="hero-subtitle-en" data-i18n="hero.subtitle">When memories find their way home.</p>
+                <p class="hero-description" data-i18n="hero.description">戰爭可能奪走身份，但記憶仍能帶領他們回家。</p>
+                
+                <div class="hero-actions">
+                    <button class="action-card card-child" data-modal="childModal">
+                        <span class="action-icon">🧒</span>
+                        <span class="action-text" data-i18n="hero.child">我是孩子</span>
+                    </button>
+                    <button class="action-card card-parent" data-modal="parentModal">
+                        <span class="action-icon">👩‍👧</span>
+                        <span class="action-text" data-i18n="hero.parent">我是家人</span>
+                    </button>
+                    <button class="action-card card-reporter" data-modal="reporterModal">
+                        <span class="action-icon">🧑‍💼</span>
+                        <span class="action-text" data-i18n="hero.reporter">我是通報者</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span data-i18n="hero.scroll">向下探索</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- 功能亮點區 -->
+    <section class="features" id="about">
+        <div class="container">
+            <h2 class="section-title" data-i18n="features.title">核心功能</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">🧩</div>
+                    <h3 data-i18n="features.story.title">StoryMatch 敘事驗證</h3>
+                    <p data-i18n="features.story.desc">以孩子的故事生成專屬驗證問題。</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">🔒</div>
+                    <h3 data-i18n="features.privacy.title">去識別化資料保護</h3>
+                    <p data-i18n="features.privacy.desc">所有影像、語音皆即時加密。</p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">💬</div>
+                    <h3 data-i18n="features.ai.title">多語 AI 對話</h3>
+                    <p data-i18n="features.ai.desc">支援語音互動與即時翻譯。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 國際合作區 -->
+    <section class="partnerships" id="how-to-help">
+        <div class="container">
+            <h2 class="section-title" data-i18n="partners.title">國際合作夥伴</h2>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <div class="logo-placeholder">UNICEF</div>
+                </div>
+                <div class="partner-logo">
+                    <div class="logo-placeholder">ICRC</div>
+                </div>
+                <div class="partner-logo">
+                    <div class="logo-placeholder">UNHCR</div>
+                </div>
+                <div class="partner-logo">
+                    <div class="logo-placeholder">Microsoft<br>Humanitarian AI</div>
+                </div>
+                <div class="partner-logo">
+                    <div class="logo-placeholder">NGO<br>Partners</div>
+                </div>
+            </div>
+            <p class="partnership-note" data-i18n="partners.note">
+                HopeLink operates under international humanitarian data protection protocols.
+            </p>
+        </div>
+    </section>
+
+    <!-- 安全支援與客服區 -->
+    <section class="support">
+        <div class="container">
+            <h2 class="section-title" data-i18n="support.title">支援與協助</h2>
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">📞</div>
+                    <h3 data-i18n="support.hotline.title">緊急通報熱線</h3>
+                    <p data-i18n="support.hotline.desc">24小時全年無休</p>
+                    <a href="tel:+886123456789" class="support-link">+886 1234-5678</a>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">✉️</div>
+                    <h3 data-i18n="support.form.title">NGO 聯繫表單</h3>
+                    <p data-i18n="support.form.desc">我們將盡快回覆</p>
+                    <button class="support-link" data-i18n="support.form.btn">填寫表單</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🔗</span>
+                        <span class="logo-text">HopeLink</span>
+                    </div>
+                    <p class="footer-tagline" data-i18n="footer.tagline">「他們的故事，成為回家的方向。」</p>
+                    <p class="footer-tagline-en" data-i18n="footer.tagline-en">Every story leads home.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 data-i18n="footer.about.title">關於我們</h4>
+                        <ul>
+                            <li><a href="#about" data-i18n="footer.about.link1">關於 HopeLink</a></li>
+                            <li><a href="#how-to-help" data-i18n="footer.about.link2">如何協助</a></li>
+                            <li><a href="#" data-i18n="footer.about.link3">我們的團隊</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 data-i18n="footer.portal.title">使用入口</h4>
+                        <ul>
+                            <li><a href="#" data-modal="childModal" data-i18n="footer.portal.child">孩童端入口</a></li>
+                            <li><a href="#" data-modal="parentModal" data-i18n="footer.portal.parent">家長端入口</a></li>
+                            <li><a href="#" data-modal="reporterModal" data-i18n="footer.portal.reporter">通報者入口</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 data-i18n="footer.legal.title">法律資訊</h4>
+                        <ul>
+                            <li><a href="#" data-i18n="footer.legal.terms">使用條款</a></li>
+                            <li><a href="#" data-i18n="footer.legal.privacy">隱私政策</a></li>
+                            <li><a href="#" data-i18n="footer.legal.contact">聯絡我們</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright" data-i18n="footer.copyright">HopeLink © 2025 Humanitarian Tech Initiative</p>
+                <p class="privacy-note" data-i18n="footer.privacy-note">本平台僅用於人道救援，所有資料均依 GDPR 與 UNICEF 隱私準則加密處理。</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 模態視窗 - 孩童端 -->
+    <div id="childModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-child">
+            <button class="modal-close" data-close="childModal">✕</button>
+            <div class="modal-header">
+                <span class="modal-icon">🧒</span>
+                <h2 data-i18n="modal.child.title">孩童端使用路徑</h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal-tagline" data-i18n="modal.child.tagline">「AI 用故事引導孩子說出家的樣子。」</p>
+                
+                <div class="modal-steps">
+                    <div class="modal-step">
+                        <div class="modal-step-number">1</div>
+                        <div class="modal-step-content">
+                            <h3 data-i18n="modal.child.step1.title">生成語意特徵</h3>
+                            <p data-i18n="modal.child.step1.desc">透過溫和的對話，AI 會引導孩子分享關於家的記憶、家人的特徵、生活的細節等。系統會將這些故事轉換成語意特徵。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-step-arrow">↓</div>
+                    
+                    <div class="modal-step">
+                        <div class="modal-step-number">2</div>
+                        <div class="modal-step-content">
+                            <h3 data-i18n="modal.child.step2.title">加密上傳</h3>
+                            <p data-i18n="modal.child.step2.desc">所有資料都會經過去識別化處理並加密，確保孩子的隱私和安全。沒有任何個人身份資訊會被直接儲存。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-step-arrow">↓</div>
+                    
+                    <div class="modal-step">
+                        <div class="modal-step-number">3</div>
+                        <div class="modal-step-content">
+                            <h3 data-i18n="modal.child.step3.title">比對資料庫</h3>
+                            <p data-i18n="modal.child.step3.desc">系統會自動將語意特徵與資料庫中家長提供的資訊進行比對，找出可能的匹配結果，並通知相關的 NGO 組織。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-actions">
+                    <button class="modal-btn btn-primary" id="childStartBtn" data-i18n="modal.child.btn">開始使用</button>
+                </div>
+                
+                <div class="modal-notice">
+                    <p data-i18n="modal.child.notice">🔒 我們承諾保護每個孩子的隱私與安全</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模態視窗 - 家長端 -->
+    <div id="parentModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-parent">
+            <button class="modal-close" data-close="parentModal">✕</button>
+            <div class="modal-header">
+                <span class="modal-icon">👩‍👧</span>
+                <h2 data-i18n="modal.parent.title">家長端使用路徑</h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal-tagline" data-i18n="modal.parent.tagline">「家長可搜尋並回答孩子故事生成的驗證題。」</p>
+                
+                <div class="modal-steps">
+                    <div class="modal-step">
+                        <div class="modal-step-number">1</div>
+                        <div class="modal-step-content">
+                            <h3 data-i18n="modal.parent.step1.title">AI 語意比對</h3>
+                            <p data-i18n="modal.parent.step1.desc">當您提供關於失散孩子的資訊後，系統會使用 AI 進行語意分析，與資料庫中的孩童故事進行比對，找出可能的匹配。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-step-arrow">↓</div>
+                    
+                    <div class="modal-step">
+                        <div class="modal-step-number">2</div>
+                        <div class="modal-step-content">
+                            <h3 data-i18n="modal.parent.step2.title">NGO 人工核實</h3>
+                            <p data-i18n="modal.parent.step2.desc">當系統找到可能的匹配時，會由專業的 NGO 工作人員進行人工核實，確保資訊的準確性和安全性。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-step-arrow">↓</div>
+                    
+                    <div class="modal-step">
+                        <div class="modal-step-number">3</div>
+                        <div class="modal-step-content">
+                            <h3 data-i18n="modal.parent.step3.title">安全重聚</h3>
+                            <p data-i18n="modal.parent.step3.desc">在確認身份後，NGO 會協助安排安全的重聚流程，確保整個過程在專業人員的監督下進行。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-actions">
+                    <button class="modal-btn btn-primary" id="parentStartBtn" data-i18n="modal.parent.btn">開始使用</button>
+                </div>
+                
+                <div class="modal-notice">
+                    <p data-i18n="modal.parent.notice">我們理解您的心情，會盡全力協助您找到孩子</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 模態視窗 - 通報者端 -->
+    <div id="reporterModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-reporter">
+            <button class="modal-close" data-close="reporterModal">✕</button>
+            <div class="modal-header">
+                <span class="modal-icon">🧑‍💼</span>
+                <h2 data-i18n="modal.reporter.title">通報者端使用路徑</h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal-tagline" data-i18n="modal.reporter.tagline">「任何人都能匿名上報失散孩童。」</p>
+                
+                <div class="modal-steps">
+                    <div class="modal-step">
+                        <div class="modal-step-number">1</div>
+                        <div class="modal-step-content">
+                            <h3 data-i18n="modal.reporter.step1.title">上傳照片與地點</h3>
+                            <p data-i18n="modal.reporter.step1.desc">您可以匿名上傳失散孩童的照片和發現地點。我們接受各種形式的資訊，包括照片、影片或文字描述。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-step-arrow">↓</div>
+                    
+                    <div class="modal-step">
+                        <div class="modal-step-number">2</div>
+                        <div class="modal-step-content">
+                            <h3 data-i18n="modal.reporter.step2.title">系統自動模糊</h3>
+                            <p data-i18n="modal.reporter.step2.desc">上傳的照片會自動進行臉部和敏感資訊的模糊處理，保護孩童的隱私和安全，防止不當使用。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-step-arrow">↓</div>
+                    
+                    <div class="modal-step">
+                        <div class="modal-step-number">3</div>
+                        <div class="modal-step-content">
+                            <h3 data-i18n="modal.reporter.step3.title">自動分類</h3>
+                            <p data-i18n="modal.reporter.step3.desc">系統會根據地點、時間和其他特徵自動分類，並通知相關區域的 NGO 組織進行後續處理。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-actions">
+                    <button class="modal-btn btn-primary" id="reporterStartBtn" data-i18n="modal.reporter.btn">開始使用</button>
+                    <button class="modal-btn btn-secondary" id="viewCasesFromIntroBtn" data-i18n="modal.reporter.btn-view">📋 查看我的案件</button>
+                </div>
+                
+                <div class="modal-notice">
+                    <p data-i18n="modal.reporter.notice">🙏 感謝您的通報，每一份資訊都可能成為重聚的關鍵</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 通報者主選單視窗 -->
+    <div id="reporterMainModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-reporter reporter-main">
+            <button class="modal-close" data-close="reporterMainModal">✕</button>
+            <div class="modal-header">
+                <span class="modal-icon">🧑‍💼</span>
+                <h2>失散孩童通報系統</h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal-tagline">「任何人都能匿名上報失散孩童」</p>
+                
+                <div class="reporter-intro">
+                    <div class="intro-step">
+                        <span class="intro-icon">📸</span>
+                        <p>上傳照片會自動模糊處理</p>
+                    </div>
+                    <div class="intro-step">
+                        <span class="intro-icon">📝</span>
+                        <p>填寫基本資訊協助救援</p>
+                    </div>
+                    <div class="intro-step">
+                        <span class="intro-icon">🔒</span>
+                        <p>完全匿名，資料加密保護</p>
+                    </div>
+                </div>
+                
+                <div class="modal-actions">
+                    <button class="modal-btn btn-primary" id="startReportBtn">開始通報</button>
+                    <button class="modal-btn btn-secondary" id="viewCasesBtn">查看我的案件</button>
+                </div>
+                
+                <div class="modal-notice">
+                    <p>🙏 感謝您的通報，每一份資訊都可能成為重聚的關鍵</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 通報表單視窗 -->
+    <div id="reportFormModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-reporter reporter-form">
+            <button class="modal-close" data-close="reportFormModal">✕</button>
+            <div class="modal-header">
+                <span class="modal-icon">📝</span>
+                <h2 data-i18n="form.reporter.title">失散孩童通報表單</h2>
+            </div>
+            <div class="modal-body">
+                <form id="reportForm" class="report-form">
+                    <!-- 1. 上傳照片 -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <span class="section-number">1</span>
+                            <span data-i18n="form.section1.title">上傳孩童照片</span>
+                        </h3>
+                        <div class="image-upload-area" id="imageUploadArea">
+                            <input type="file" id="childImage" accept="image/*" hidden>
+                            <div class="upload-placeholder">
+                                <span class="upload-icon">📷</span>
+                                <p data-i18n="form.upload.placeholder">點擊上傳照片</p>
+                                <span class="upload-note" data-i18n="form.upload.note">照片將自動模糊處理以保護隱私</span>
+                            </div>
+                            <div class="image-preview" id="imagePreview" style="display: none;">
+                                <img id="previewImg" src="" alt="預覽">
+                                <div class="blur-indicator" data-i18n="form.upload.blur">✓ 已模糊處理</div>
+                                <button type="button" class="change-image-btn" data-i18n="form.upload.change">更換照片</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. 客觀描述 -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <span class="section-number">2</span>
+                            <span data-i18n="form.section2.title">孩童基本資訊</span>
+                        </h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-i18n="form.name.label">姓名</label>
+                                <input type="text" id="childName" data-i18n-placeholder="form.name.placeholder">
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="form.age.label">估計年齡 *</label>
+                                <input type="text" id="childAge" data-i18n-placeholder="form.age.placeholder" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="form.gender.label">性別 *</label>
+                                <select id="childGender" required>
+                                    <option value="" data-i18n="form.gender.placeholder">請選擇</option>
+                                    <option value="male" data-i18n="form.gender.male">男</option>
+                                    <option value="female" data-i18n="form.gender.female">女</option>
+                                    <option value="unknown" data-i18n="form.gender.unknown">不確定</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-i18n="form.language.label">語言</label>
+                                <input type="text" id="childLanguage" data-i18n-placeholder="form.language.placeholder">
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="form.health.label">健康狀況</label>
+                                <input type="text" id="childHealth" data-i18n-placeholder="form.health.placeholder">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="form.other.label">其他</label>
+                            <textarea id="childOther" rows="2" data-i18n-placeholder="form.other.placeholder"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- 3. 地點資訊 -->
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <span class="section-number">3</span>
+                            <span data-i18n="form.section3.title">發現地點資訊</span>
+                        </h3>
+                        <div class="form-group">
+                            <label data-i18n="form.location.label">發現地點 *</label>
+                            <input type="text" id="location" data-i18n-placeholder="form.location.placeholder" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-i18n="form.gps.label">GPS 座標</label>
+                                <div class="gps-input">
+                                    <input type="text" id="gpsCoords" data-i18n-placeholder="form.gps.placeholder" readonly>
+                                    <button type="button" id="getGpsBtn" class="gps-btn" data-i18n="form.gps.btn">📍 獲取定位</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="form.time.label">發現時間 *</label>
+                                <input type="datetime-local" id="foundTime" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="form.environment.label">環境描述</label>
+                            <textarea id="environment" rows="3" data-i18n-placeholder="form.environment.placeholder"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- 按鈕區 -->
+                    <div class="form-actions">
+                        <button type="button" class="form-btn btn-draft" id="saveDraftBtn" data-i18n="form.btn.draft">
+                            💾 儲存草稿
+                        </button>
+                        <button type="submit" class="form-btn btn-submit" data-i18n="form.btn.submit">
+                            📤 提交通報
+                        </button>
+                    </div>
+                </form>
+                
+                <div class="form-notice">
+                    <p data-i18n="form.notice">🔒 您的通報完全匿名，所有資料都經過加密處理</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 案件追蹤視窗 -->
+    <div id="caseTrackingModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-reporter case-tracking">
+            <button class="modal-close" data-close="caseTrackingModal">✕</button>
+            <button class="modal-back-btn" id="backToFormBtn">
+                ← 返回
+            </button>
+            <div class="modal-header">
+                <span class="modal-icon">📋</span>
+                <h2>我的通報案件</h2>
+            </div>
+            <div class="modal-body">
+                <div class="case-list" id="caseList">
+                    <!-- 案件列表將通過 JavaScript 動態生成 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 案件詳情視窗 -->
+    <div id="caseDetailModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-reporter case-detail">
+            <button class="modal-close" data-close="caseDetailModal">✕</button>
+            <button class="modal-back-btn" id="backToCaseListBtn">
+                ← 返回案件列表
+            </button>
+            <div class="modal-header">
+                <span class="modal-icon">📄</span>
+                <h2>案件詳情</h2>
+            </div>
+            <div class="modal-body">
+                <div id="caseDetailContent">
+                    <!-- 案件詳情將通過 JavaScript 動態生成 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 家長端搜尋表單視窗 -->
+    <div id="parentSearchModal" class="modal parent-search">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" data-close="parentSearchModal">✕</button>
+            <div class="modal-header">
+                <h2>搜尋失散孩童</h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal-tagline">「請提供您記得的資訊，AI 會協助比對資料庫」</p>
+                
+                <form id="parentSearchForm" class="parent-search-form">
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <span class="section-number">1</span>
+                            <span>基本資訊</span>
+                        </h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>孩子的姓名</label>
+                                <input type="text" id="searchName" placeholder="例如：小明">
+                                <p class="form-hint">即使只記得部分也沒關係</p>
+                            </div>
+                            <div class="form-group">
+                                <label>估計年齡</label>
+                                <input type="text" id="searchAge" placeholder="例如：8-10 歲">
+                            </div>
+                            <div class="form-group">
+                                <label>性別</label>
+                                <select id="searchGender">
+                                    <option value="">請選擇</option>
+                                    <option value="male">男</option>
+                                    <option value="female">女</option>
+                                    <option value="unknown">不確定</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <span class="section-number">2</span>
+                            <span>地點與時間</span>
+                        </h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>失散地點</label>
+                                <input type="text" id="searchLocation" placeholder="例如：烏克蘭基輔">
+                            </div>
+                            <div class="form-group">
+                                <label>失散時間</label>
+                                <input type="text" id="searchTime" placeholder="例如：2022年3月">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3 class="form-section-title">
+                            <span class="section-number">3</span>
+                            <span>特徵與記憶（選填）</span>
+                        </h3>
+                        <div class="form-group">
+                            <label>外貌特徵</label>
+                            <textarea id="searchFeatures" rows="2" placeholder="例如：短髮、左手臂有胎記、常戴紅色帽子..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>關鍵記憶或習慣</label>
+                            <textarea id="searchMemories" rows="3" placeholder="例如：喜歡唱歌、害怕黑暗、睡前要聽故事、最喜歡的玩具是..."></textarea>
+                            <p class="form-hint">這些細節會幫助 AI 更精確地比對</p>
+                        </div>
+                    </div>
+
+                    <div class="modal-actions">
+                        <button type="submit" class="modal-btn btn-primary">
+                            開始搜尋
+                        </button>
+                    </div>
+                </form>
+
+                <div class="modal-notice">
+                    <p>您的資料已加密並去識別化處理，確保隱私安全</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 家長端搜尋結果視窗 -->
+    <div id="parentResultsModal" class="modal parent-results">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" data-close="parentResultsModal">✕</button>
+            <button class="modal-back-btn" id="backToSearchBtn">← 返回搜尋</button>
+            <div class="modal-header">
+                <span class="modal-icon">📋</span>
+                <h2>搜尋結果</h2>
+            </div>
+            <div class="modal-body">
+                <div id="searchResultsContent">
+                    <!-- 搜尋結果將動態生成在這裡 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 家長端驗證問答視窗 -->
+    <div id="parentVerificationModal" class="modal parent-verification">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" data-close="parentVerificationModal">✕</button>
+            <button class="modal-back-btn" id="backToResultsBtn">← 返回結果</button>
+            <div class="modal-header">
+                <h2>StoryMatch 記憶驗證</h2>
+            </div>
+            <div class="modal-body">
+                <div class="attempts-display" id="attemptsDisplay">
+                    驗證次數：<span id="currentAttempt">1</span> / 3
+                </div>
+
+                <div class="verification-intro">
+                    <h3>根據孩童的敘事，AI 生成了以下驗證問題</h3>
+                    <p>請根據您的記憶回答，不需要完全一致</p>
+                    <p>AI 會分析語意與情感的吻合度</p>
+                </div>
+
+                <form id="verificationForm" class="verification-form">
+                    <div id="questionsContainer">
+                        <!-- 問題將動態生成在這裡 -->
+                    </div>
+
+                    <div class="modal-actions">
+                        <button type="submit" class="modal-btn btn-primary">
+                            提交驗證
+                        </button>
+                    </div>
+                </form>
+
+                <div class="verification-notice">
+                    <p>記憶驗證說明：</p>
+                    <ul>
+                        <li>回答不需要逐字相同，AI 會理解語意</li>
+                        <li>即使細節略有差異，情感一致也能通過</li>
+                        <li>如果一時想不起來，可以描述相關的記憶片段</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 家長端驗證結果視窗 -->
+    <div id="parentResultModal" class="modal parent-result">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" data-close="parentResultModal">✕</button>
+            <div class="modal-header">
+                <h2>驗證結果</h2>
+            </div>
+            <div class="modal-body">
+                <div id="verificationResultContent">
+                    <!-- 驗證結果將動態生成在這裡 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 孩童端 AI 聊天模態視窗 -->
+    <div id="childAIChatModal" class="modal ai-chat-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" data-close="childAIChatModal">✕</button>
+            
+            <!-- AI 聊天頂部 -->
+            <div class="ai-chat-header">
+                <div class="chat-lang-selector">
+                    <button class="chat-lang-btn active" data-chat-lang="zh">中文</button>
+                    <button class="chat-lang-btn" data-chat-lang="en">EN</button>
+                    <button class="chat-lang-btn" data-chat-lang="uk">УКР</button>
+                    <button class="chat-lang-btn" data-chat-lang="ar">عربي</button>
+                </div>
+            </div>
+            
+            <!-- AI 聊天容器 -->
+            <div class="ai-chat-container">
+                <!-- 對話訊息區 -->
+                <div class="chat-messages" id="chatMessages">
+                    <!-- 初始問候訊息 -->
+                    <div class="chat-bubble ai-bubble">
+                        <p>你好！我是光光 ✨</p>
+                        <p>我想聽聽你的故事，可以嗎？</p>
+                    </div>
+                </div>
+                
+                <!-- 互動控制區 -->
+                <div class="chat-controls">
+                    <!-- 情緒選擇器 -->
+                    <div class="emotion-selector">
+                        <button class="emotion-btn" data-emotion="happy" title="開心">😊</button>
+                        <button class="emotion-btn" data-emotion="neutral" title="還好">😐</button>
+                        <button class="emotion-btn" data-emotion="nervous" title="緊張">😟</button>
+                        <button class="emotion-btn" data-emotion="rest" title="想休息">😴</button>
+                    </div>
+                    
+                    <!-- 文字輸入容器 -->
+                    <div class="text-input-container" id="textInputContainer">
+                        <input 
+                            type="text" 
+                            class="text-input" 
+                            id="textInput" 
+                            placeholder="輸入你的訊息..."
+                        />
+                        <button class="text-send-btn" id="textSendBtn">
+                            ➤
+                        </button>
+                    </div>
+                    
+                    <!-- 暫停按鈕 -->
+                    <button class="pause-btn" id="pauseChatBtn">
+                        ⏸️ 暫停
+                    </button>
+                </div>
+                
+                <!-- 安撫模式覆蓋層 -->
+                <div class="comfort-overlay" id="comfortOverlay">
+                    <div class="comfort-content">
+                        <div class="comfort-animation">
+                            <div class="moon-icon">🌙</div>
+                            <div class="stars">
+                                <span>✨</span>
+                                <span>✨</span>
+                                <span>✨</span>
+                            </div>
+                        </div>
+                        <h2>我們休息一下吧 ☁️</h2>
+                        <p>慢慢來，沒關係的～</p>
+                        <p>準備好了再繼續聊天</p>
+                        <button class="resume-btn" id="resumeChatBtn">
+                            ▶️ 繼續聊天
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+    <script src="child-ai-chat.js"></script>
+    <script src="parent-system.js"></script>
+</body>
+</html>
+
