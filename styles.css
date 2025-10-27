@@ -336,7 +336,7 @@ body.rtl .detail-grid {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(34, 34, 34, 0.712) 100%);
 }
 
 .floating-links {
@@ -390,7 +390,7 @@ body.rtl .detail-grid {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: var(--spacing-md);
-    color: var(--text-dark);
+    color: var(--bg-white);
     animation: fadeInUp 1s ease-out;
 }
 
@@ -398,7 +398,7 @@ body.rtl .detail-grid {
     font-family: var(--font-english);
     font-size: 1.8rem;
     font-weight: 300;
-    color: var(--text-light);
+    color: var(--bg-white);
     font-style: italic;
     margin-bottom: var(--spacing-sm);
     animation: fadeInUp 1s ease-out 0.2s both;
@@ -406,7 +406,7 @@ body.rtl .detail-grid {
 
 .hero-description {
     font-size: 1.2rem;
-    color: var(--text-light);
+    color: var(--bg-white);
     margin-bottom: var(--spacing-lg);
     animation: fadeInUp 1s ease-out 0.4s both;
 }
@@ -470,7 +470,7 @@ body.rtl .detail-grid {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    color: var(--text-light);
+    color: var(--bg-white);
     animation: bounce 2s ease-in-out infinite;
 }
 
