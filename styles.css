@@ -294,6 +294,7 @@ body.rtl .detail-grid {
 .auth-btn:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
+    color: white;
 }
 
 .mobile-menu-toggle {
@@ -441,6 +442,7 @@ body.rtl .detail-grid {
 .action-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-lg);
+    color: white;
 }
 
 .action-icon {
@@ -654,6 +656,7 @@ body.rtl .detail-grid {
 .pathway-btn:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
+    color: white;
 }
 
 .btn-parent {
@@ -1094,6 +1097,7 @@ body.rtl .detail-grid {
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
+    color: white;
 }
 
 .btn-secondary {
@@ -1373,6 +1377,7 @@ body.rtl .detail-grid {
 
 .gps-btn:hover {
     background: #5ab896;
+    color: white;
 }
 
 /* 表單按鈕 */
@@ -1413,6 +1418,7 @@ body.rtl .detail-grid {
 .btn-submit:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
+    color: white;
 }
 
 .form-notice {
@@ -1524,6 +1530,7 @@ body.rtl .detail-grid {
 .view-detail-btn:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-sm);
+    color: white;
 }
 
 .empty-case {
@@ -2297,6 +2304,7 @@ body.rtl .detail-grid {
 .text-send-btn:hover:not(:disabled) {
     transform: scale(1.1);
     box-shadow: var(--shadow-md);
+    color: white;
 }
 
 .text-send-btn:disabled {
@@ -2461,6 +2469,7 @@ body.rtl .detail-grid {
 .resume-btn:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
+    color: var(--text-dark);
 }
 
 /* 響應式調整 */
@@ -2665,6 +2674,7 @@ body.rtl .detail-grid {
 .select-case-btn:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
+    color: white;
 }
 
 .high-match-notice {
