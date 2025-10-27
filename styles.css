@@ -324,6 +324,10 @@ body.rtl .detail-grid {
     right: 0;
     bottom: 0;
     z-index: -1;
+    background-image: url('images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .gradient-overlay {
@@ -332,7 +336,7 @@ body.rtl .detail-grid {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--gradient-hero);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
 }
 
 .floating-links {
@@ -421,7 +425,8 @@ body.rtl .detail-grid {
     align-items: center;
     gap: var(--spacing-sm);
     padding: var(--spacing-md) var(--spacing-lg);
-    background: white;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     text-decoration: none;
